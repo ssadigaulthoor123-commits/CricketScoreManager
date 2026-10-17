@@ -218,10 +218,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                         "extras_conceded INTEGER DEFAULT 0," +
 
-                        "extras_conceded INTEGER DEFAULT 0," +
-
-                        "dot_balls INTEGER DEFAULT 0," +
-
                         "three_wicket_hauls INTEGER DEFAULT 0," +
 
                         "five_wicket_hauls INTEGER DEFAULT 0," +
@@ -351,7 +347,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
                         "declared INTEGER DEFAULT 0," +
 
-                        "follow_on INTEGER DEFAULT 0" +
+                        "follow_on INTEGER DEFAULT 0," +
+                        "is_paused INTEGER DEFAULT 0," +
+                        "striker_id INTEGER DEFAULT -1," +
+                        "non_striker_id INTEGER DEFAULT -1," +
+                        "bowler_id INTEGER DEFAULT -1," +
+                        "previous_bowler_id INTEGER DEFAULT -1," +
+                        "legal_balls_this_over INTEGER DEFAULT 0" +
 
                         ")"
         );
