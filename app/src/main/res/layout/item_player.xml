@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+
+    android:clickable="true"
+    android:focusable="true"
+
+    android:foreground="?attr/selectableItemBackground"
+
+    app:cardBackgroundColor="@color/surface"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:minHeight="76dp"
+
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+
+        android:paddingStart="14dp"
+        android:paddingTop="11dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="11dp">
+
+        <!-- PLAYER ICON -->
+
+        <ImageView
+            android:id="@+id/ivPlayer"
+
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+
+            android:padding="7dp"
+
+            android:src="@drawable/ic_player"
+            android:contentDescription="@null" />
+
+        <!-- JERSEY -->
+
+        <TextView
+            android:id="@+id/tvJersey"
+
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+
+            tools:text="#18" />
+
+        <!-- PLAYER INFORMATION -->
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="6dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPlayerName"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                tools:text="Virat Kohli" />
+
+            <TextView
+                android:id="@+id/tvPlayerMeta"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="3dp"
+
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+
+                tools:text="Chalker Kings  ·  Batsman" />
+
+        </LinearLayout>
+
+        <!-- EDIT -->
+
+        <ImageButton
+            android:id="@+id/btnEditPlayer"
+
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+
+            android:padding="9dp"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:src="@drawable/ic_edit"
+
+            android:contentDescription="@string/edit" />
+
+        <!-- DELETE -->
+
+        <ImageButton
+            android:id="@+id/btnDeletePlayer"
+
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+
+            android:padding="9dp"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            android:src="@drawable/ic_delete"
+
+            android:contentDescription="@string/delete" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CricketScorer">
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CricketScorer.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.DashboardActivity" android:exported="false" />
+        <activity android:name=".activities.TeamListActivity" android:exported="false" />
+        <activity android:name=".activities.AddEditTeamActivity" android:exported="false" />
+        <activity android:name=".activities.PlayerListActivity" android:exported="false" />
+        <activity android:name=".activities.AddEditPlayerActivity" android:exported="false" />
+        <activity android:name=".activities.NewMatchActivity" android:exported="false" />
+        <activity android:name=".activities.SelectPlayingXIActivity" android:exported="false" />
+        <activity android:name=".activities.LiveScoringActivity" android:exported="false" />
+        <activity android:name=".activities.MatchSummaryActivity" android:exported="false" />
+        <activity android:name=".activities.MatchHistoryActivity" android:exported="false" />
+        <activity android:name=".activities.ScorecardActivity" android:exported="false" />
+        <activity android:name=".activities.StatisticsActivity" android:exported="false" />
+        <activity android:name=".activities.PlayerStatDetailActivity" android:exported="false" />
+        <activity android:name=".activities.SettingsActivity" android:exported="false" />
+
+    </application>
+
+</manifest>

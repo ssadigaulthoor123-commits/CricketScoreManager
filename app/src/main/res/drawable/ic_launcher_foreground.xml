@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- STUMPS & BAILS -->
+    <path
+        android:fillColor="#F0C243"
+        android:pathData="M42,32h4v38h-4z" />
+    <path
+        android:fillColor="#F0C243"
+        android:pathData="M52,30h4v40h-4z" />
+    <path
+        android:fillColor="#F0C243"
+        android:pathData="M62,32h4v38h-4z" />
+
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M40,30h15v3h-15z" />
+    <path
+        android:fillColor="#FFE082"
+        android:pathData="M53,30h15v3h-15z" />
+
+    <!-- CRICKET BAT -->
+    <path
+        android:fillColor="#E6B87D"
+        android:pathData="M50,42 L72,74 L66,78 L44,46 Z" />
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M43,45 L35,33 L38,31 L46,43 Z" />
+
+    <!-- RED CRICKET BALL -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M38,76 A12,12 0 1,0 62,76 A12,12 0 1,0 38,76 Z" />
+    <path
+        android:fillColor="#FF5252"
+        android:pathData="M42,70 A10,10 0 0,1 54,66 A10,10 0 0,0 42,70 Z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M42,84 Q50,76 58,68" />
+
+</vector>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:titleTextAppearance="@style/Toolbar.Title"
+            app:navigationIcon="@drawable/ic_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <FrameLayout
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_circle_accent">
+                <TextView
+                    android:id="@+id/tvJersey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="22sp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/tvMeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary" />
+        </LinearLayout>
+
+        <!-- AWARDS & ACHIEVEMENTS -->
+        <TextView
+            style="@style/SectionHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="AWARDS &amp; ACHIEVEMENTS" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="1dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="16dp">
+
+                <include layout="@layout/stat_grid_item" android:id="@+id/statMoM" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BATTING -->
+        <TextView
+            style="@style/SectionHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="BATTING CAREER" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="1dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="16dp">
+
+                <include layout="@layout/stat_grid_item" android:id="@+id/statMatches" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statInnings" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statRuns" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statNotOuts" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statAvg" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statSR" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statHS" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statFours" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statSixes" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statThirties" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statFifties" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statCenturies" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statDucks" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- BOWLING -->
+        <TextView
+            style="@style/SectionHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="BOWLING CAREER" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="1dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="16dp">
+
+                <include layout="@layout/stat_grid_item" android:id="@+id/statOvers" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statWickets" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statBowlingInnings" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statRunsGiven" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statEconomy" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statMaidens" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statExtras" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statDotBalls" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/stat3W" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/stat5W" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statBestBowling" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- FIELDING -->
+        <TextView
+            style="@style/SectionHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="FIELDING CAREER" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="1dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="16dp">
+
+                <include layout="@layout/stat_grid_item" android:id="@+id/statCatches" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statRunOuts" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+                <include layout="@layout/stat_grid_item" android:id="@+id/statStumpings" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="wrap_content"/>
+
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
